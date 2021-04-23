@@ -1,0 +1,385 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+* {
+
+    padding: 0;
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+
+}
+
+:root {
+
+    overflow-x: hidden;
+
+}
+
+html {
+
+    scroll-behavior: smooth;
+
+}
+
+.App {
+
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+
+}
+
+.intro {
+
+    width: 100vw;
+    height: 15vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #C8A096;
+
+}
+
+.intro h1 {
+
+    font-size: 28pt;
+    color: #707D65;
+    line-height: 35px;
+
+}
+
+.intro span {
+
+    font-family: 'Shadows Into Light', cursive;
+    color: #F4F2F3; 
+    /* definir a cor com ela */
+
+}
+
+.imgIntro {
+
+    background-color: #C8A096;
+
+}
+
+.subtitle {
+
+    display: flex;
+    width: 100vw;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.subtitle img {
+
+    width: 10px;
+    height: 60px;
+
+}
+
+.imgIntro figure {
+
+    position: relative;
+    text-align: center;
+
+}
+
+.imgIntro figcaption {
+
+    /* display: flex; */
+    position: absolute;
+    bottom: 8px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    font-size: 14pt;
+    color:white;
+    line-height: 20px;
+
+}
+
+.imgIntro figcaption img {
+
+
+    width: 50px;
+    height: 50px;
+
+}
+
+.imgIntro img {
+
+    width: 100vw;
+    max-height: 500px;
+
+}
+
+.DefaultSection {
+
+    width: 100vw;
+    padding: 0px;
+    margin: 0px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+.whiteBackgroud {
+
+    background-color: #F4F2F3;
+    /* background-image: url("../../imgs/folha.png");
+    background-position: center center;
+    /* background-size: 100vw ; */
+    /* background-repeat: no-repeat; */
+
+}
+
+.greenBackgroud {
+
+    background-color: #707D65;
+
+}
+
+.blueBackgroud {
+
+    background-color: #D1DCE2;
+
+}
+
+.DefaultDiv {
+
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+.DefaultDiv p {
+
+    text-align: justify;
+    margin: 30px 10%;
+
+}
+
+.phraseOne {
+
+    background-color: #C8A096;
+    color: white;
+
+}
+
+.phraseTwo {
+
+    color: #707D65;
+    line-height: 28px;
+
+}
+
+.phraseTwo span { 
+    
+    padding: 3px;
+    background-color: #707D65;
+    border-radius: 10px;
+    color: white;
+
+}
+
+.phraseThree {
+
+    background-color: #707D65;
+    color: white;
+
+}
+
+.buttonIWant {
+
+    text-decoration: none;
+    color: #707D65;
+    cursor: pointer;
+    margin-top: 20px;
+    padding: 10px 30px;
+    border-radius: 30px;
+    background-color: #D1DCE2;
+    animation: upAndDown 2s linear infinite;
+
+}
+
+.willLearn {
+
+    background-color: #D1DCE2;
+    color: #707D65;
+
+}
+
+.dayCourseCircle {
+
+    width:  55px;
+    height: 55px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: white;
+    padding: 35px;
+    border-radius: 50%;
+    background-color: #C8A096;
+    text-align: center;
+    
+}
+
+@keyframes upAndDown {
+
+    0% {
+
+        transform: translateY(0px);
+
+    }
+    50% {
+
+        transform: translateY(-8px);
+
+    }
+    100% {
+
+        transform: translateY(0px);
+
+    }
+    
+}
+
+.daysCourse {
+
+    width: 50%;
+    margin: 30px 0px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+}
+
+.daysCourse h3 {
+
+    margin-top: 20px;
+    text-align: center;
+
+}
+
+.daysCourse ul {
+
+    margin: 15px 0px;
+
+}
+
+.daysCourse li {
+
+    margin: 3px 0px;
+    font-size: 10pt;
+
+}
+
+.formOptions {
+
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    color: #D1DCE2;
+
+}
+
+.formOptions fieldset {
+
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+
+}
+
+.formOptions fieldset a { 
+
+    width: auto;
+    color: #707D65;
+    padding: 15px;
+    margin-top: 15px;
+    margin-bottom: 20px;
+    cursor: pointer;
+    background-color: #D1DCE2;
+    text-decoration: none;
+    border-radius: 30px;
+    box-shadow: 0px 0px 8px rgba(160, 160, 160, 0.35);
+
+}
+
+.formOptions input {
+
+    width: 60%;
+    color: black;
+    border: none;
+    border-radius: 30px;
+    box-shadow: 0px 0px 8px rgba(160, 160, 160, 0.35);
+    padding: 15px;
+    margin: 10px 0;
+    background-color: #D1DCE2;
+
+}
+
+.whatsappButton img {
+
+    width: 120px;
+    height: 120px;
+
+}
+
+@media screen and (max-width: 768px) {
+
+
+    .DefaultDiv p {
+
+        margin: 30px 7%;
+
+    }
+
+    .daysCourse {
+
+        width: 70%;
+
+    }
+
+    .formOptions{
+
+        width: 80%;
+
+    }
+
+    .formOptions fieldset {
+
+        margin-top: 3vh;
+
+    }
+
+    .formOptions input {
+
+        width: 80%;
+
+    }
+
+    .formOptions fieldset legend h3 {
+
+        font-size: 12pt;
+        margin: 10px 0px;
+
+    }
+    
+}
