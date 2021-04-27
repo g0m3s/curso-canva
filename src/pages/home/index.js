@@ -8,6 +8,8 @@ import './style.css';
 
 import fotoIntro from '../../imgs/fotoIntro.png';
 import wppIcon from '../../imgs/wppIcon.png';
+import depoimentos from '../../imgs/depoimentos.png';
+import sobreMim from '../../imgs/sobreMim.png';
 
 function Home() {
 
@@ -81,7 +83,7 @@ function Home() {
 
             <div className='DefaultDiv phraseTwo whiteBackgroud'>
 
-                <p>Se a resposta for sim, quero te fazer um <span>convite especial!</span> Dos dias 28 a 30 de abril vai rolar a <span>Semana do Canva Criativo,</span> 100% gratuita e 100% online.</p>
+                <p>Se a resposta for sim, quero te fazer um <span>convite especial!</span> Dos dias 01 a 03 de maio vai rolar a <span>Semana do Canva Criativo,</span> 100% gratuita e 100% online.</p>
 
             </div>
 
@@ -113,10 +115,9 @@ function Home() {
                     <h3>O Canva e a minha marca pessoal</h3>
 
                     <ul>
-                        <li>Apresentação do Canva</li>
-                        <li>Dicas de como montar uma paleta de cores que representem você e sua marca</li>
-                        <li>Combinando fontes de forma fácil e que combinam com o seu negócio
-                        Pensando no seu perfil criativo</li>
+                        <li>O canva simplificado</li>
+                        <li>Por que é importante ter uma marca pessoal?</li>
+                        <li>Definindo a paleta de cores da sua marca pessoal</li>
                     </ul>
 
                 </div>
@@ -131,9 +132,8 @@ function Home() {
                     <h3>Canva para estudantes criativos</h3>
 
                     <ul>
-                        <li>Conciliando estudos e postagens</li>
-                        <li>Formas rápidas de criar no canva</li>
-                        <li>Como posso utilizar o canva dentro da faculdade?</li>
+                        <li>Como conciliar estudos e criação de conteúdo</li>
+                        <li>Como criar posts mais rápidos </li>
                     </ul>
 
                 </div>
@@ -147,10 +147,11 @@ function Home() {
 
                     <h3>Canva para empreendedores criativos</h3>
 
+                    <h5>DIA COM PROGRAMAÇÃO MUITO ESPECIAL!</h5>
                     <ul>
-                        <li>Criando o site do seu negócio no canva</li>
-                        <li>Como utilizar o canva para construir o império da sua marca </li>
-                        <li>Como montar um feed criativo para meu empreendimento?</li>
+                        <li>Parte 1: "Meu instagram virou minha empresa, e agora?" - Aula com a participação da advogada empresarial Amanda Pires </li>
+                        <li>Parte 2: Montando o site do meu negócio pelo canva  </li>
+                        <li>Parte 3: Surpresa e bônus!</li>
                     </ul>
 
                 </div>
@@ -192,9 +193,52 @@ function Home() {
 
         </section>
 
-        <section className='DefaultSection'>
+        <section className='DefaultSection depoimentos greenBackgroud'>
 
-            <h2>Depoimentos dos criativos</h2>
+            <figure>
+
+                <img src={depoimentos} />
+
+                <figcaption>Depoimentos <br/>dos criativos</figcaption>
+
+            </figure>
+
+
+        </section>
+        
+        <section className='DefaultSection aboutMe greenBackgroud'>
+
+            <h2>Quem é @laizaagomes?</h2>
+
+            <div className='textAboutMe' >
+                
+                <p>Meu nome é Laiza, tenho 23 anos, sou estudante de Nutrição e empreendedora digital.<br/><br/>
+
+                Sempre curti muito a arte e tudo que envolve processos criativos.<br/><br/>
+
+                Por conta disso, trabalhei como fotógrafa durante 1 ano e meio, mais ou menos, conciliando o trampo com a faculdade. Era por meio da arte da fotografia que eu expressava minhas ideias de criação.<br/><br/>
+
+                Até que chegou o tempo que não consegui mais conciliar trabalho e faculdade. Deixei a fotografia. Mas sentia falta de criar.<br/><br/>
+
+                Foi aí que, em 2018, conheci o canva por demanda da faculdade, para fazer trabalhos e projetos para a Nutrição. Desde então, nunca mais larguei do canva. Faço tudo por lá.<br/><br/>
+
+                O canva me permite ter o contato com a arte de volta.<br/><br/>
+
+                Depois de quase 3 anos usando o canva diariamente, decidi abrir meu Instagram para ensinar tudo que sei sobre criatividade. E para ser bem sincera, só tomei essa decisão porque a galera que me acompanha no insta pedia dicas de canva todo santo dia. Senti a necessidade em compartilhar mais.<br/><br/>
+
+                Hoje em dia, ajudo estudantes e empreendedores, que querem se destacar no meio digital, a treinarem a criatividade não só pelo canva, mas também nos stories (por meio dos tutorias de story criativo).</p>
+
+            </div>
+
+
+                <figure>
+
+                    <img src={sobreMim} />
+
+                    <figcaption><a href='https://www.instagram.com/laizaagomes/' >@laizaagomes</a></figcaption>
+
+                </figure>
+
 
         </section>
 

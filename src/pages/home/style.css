@@ -83,6 +83,7 @@ html {
 
 .imgIntro figure {
 
+    width: 100%;
     position: relative;
     text-align: center;
 
@@ -274,6 +275,14 @@ html {
 
 }
 
+.daysCourse h5 {
+
+    font-size: 9pt;
+    margin-top: 10px;
+    text-align: center;
+
+}
+
 .daysCourse ul {
 
     margin: 15px 0px;
@@ -339,6 +348,88 @@ html {
 
     width: 120px;
     height: 120px;
+
+}
+
+.depoimentos img{
+
+    max-width: 100vw;
+
+}
+
+.depoimentos figure{
+
+    position: relative;
+    text-align: center;
+
+}
+
+.depoimentos figcaption{
+
+    position: absolute;
+    top: 18%;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    color: #707D65;
+    font-size: 20pt;
+
+}
+
+.aboutMe img{
+
+    max-width: 100vw;
+
+}
+
+.aboutMe figure{
+
+    position: relative;
+    text-align: justify;
+
+}
+
+.aboutMe {
+
+    color: #D1DCE2;
+
+}
+
+.aboutMe figcaption{
+
+    width: 45%;
+    position: absolute;
+    top: 50%;
+    left: 48%;
+    right: 0;
+    font-size: 15pt;
+
+}
+
+.aboutMe figcaption p {
+
+    width: 80%;
+
+}
+.aboutMe figcaption a {
+
+    cursor: pointer;
+    text-decoration: none;
+    color: #D1DCE2;
+
+}
+
+.textAboutMe {
+
+    width: 80%;
+    margin-top: 30px;
+
+}
+
+.textAboutMe p{
+
+    font-size: 11pt;
+    text-align: justify;
 
 }
 
