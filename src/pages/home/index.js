@@ -3,6 +3,7 @@ import firebaseConfig from '../../firebaseConfig.js'
 import firebase from 'firebase/app'
 import 'firebase/auth'
 import 'firebase/database'
+import "firebase/analytics";
 import './style.css';
 
 import fotoIntro from '../../imgs/fotoIntro.png';
@@ -33,8 +34,10 @@ function Home() {
 
     useEffect(()=> {
 
-        if(!firebase.apps.length)
+        if(!firebase.apps.length){
             firebase.initializeApp(firebaseConfig);
+            firebase.analytics()
+        }
 
     })
 

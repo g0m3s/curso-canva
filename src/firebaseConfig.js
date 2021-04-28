@@ -5,7 +5,8 @@ const firebaseConfig = {
     projectId: "curso-canva",
     storageBucket: "curso-canva.appspot.com",
     messagingSenderId: "431627158901",
-    appId: "1:431627158901:web:8892efe0e9c708788c7f3c"
+    appId: "1:431627158901:web:8892efe0e9c708788c7f3c",
+    measurementId: "G-54R3KP19PJ"
   };
 
 export default firebaseConfig
