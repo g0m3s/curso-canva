@@ -40,12 +40,16 @@ function Home() {
 
     function sendLeadInfo() {
 
-        const id = firebase.database().ref().child('posts').push().key
+        if (formData.name != '' && formData.email != '') {
 
-        firebase.database().ref('leads/' + id).set({
-            name: formData.name,
-            email: formData.email
-        }).then(()=>alert('Prontinho! agora você vai precisar entrar grupo do whatsapp para receber o link das aulas e um bônus incrível!'));
+            const id = firebase.database().ref().child('posts').push().key
+
+            firebase.database().ref('leads/' + id).set({
+                name: formData.name,
+                email: formData.email
+            }).then(()=>alert('Prontinho! agora você vai precisar entrar grupo do whatsapp para receber o link das aulas e um bônus incrível!'));
+            
+        }else alert('Por favor, informe todas as informações!.')
         
     }
     
