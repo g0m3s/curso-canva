@@ -192,7 +192,7 @@ function Home() {
 
             <div className='whatsappButton' >
 
-                <a href='https://chat.whatsapp.com/EsAtg17ZZ4JEOrvxmpdV4X-- ' target="_blank" > <img src={wppIcon} /> </a>
+                <a href='https://chat.whatsapp.com/EsAtg17ZZ4JEOrvxmpdV4X' target="_blank" > <img src={wppIcon} /> </a>
 
             </div>
 
