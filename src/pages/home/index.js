@@ -1,5 +1,4 @@
 import React, {useEffect, useState} from 'react';
-import Header from '../../components/header';
 import firebaseConfig from '../../firebaseConfig.js'
 import firebase from 'firebase/app'
 import 'firebase/auth'
@@ -8,6 +7,7 @@ import './style.css';
 
 import fotoIntro from '../../imgs/fotoIntro.png';
 import wppIcon from '../../imgs/wppIcon.png';
+import instaIcon from '../../imgs/instaIcon.png';
 import depoimentos from '../../imgs/depoimentos.png';
 import sobreMim from '../../imgs/sobreMim.png';
 
@@ -40,7 +40,9 @@ function Home() {
 
     function sendLeadInfo() {
 
-        firebase.database().ref('leads/' + 0).set({
+        const id = firebase.database().ref().child('posts').push().key
+
+        firebase.database().ref('leads/' + id).set({
             name: formData.name,
             email: formData.email
         }).then(()=>alert('Prontinho! agora você vai precisar entrar grupo do whatsapp para receber o link das aulas e um bônus incrível!'));
@@ -52,7 +54,7 @@ function Home() {
     <div className="App">
 
         <div className='intro' >
-            <h1>Semana do<br/> <span>Canva</span> criativo</h1>
+            <h1>Semana do<br/> <span>Canva</span> Criativo</h1>
         </div>
 
         <div className='imgIntro'>
@@ -162,7 +164,7 @@ function Home() {
 
         </section>
 
-        <section className='DefaultSection greenBackgroud'>
+        <section className='DefaultSection greenBackgroud divForm'>
 
             <div className='formOptions' id='formOptions' >
 
@@ -181,15 +183,20 @@ function Home() {
 
                 </fieldset>
 
-                <p>E para receber o link nos dias das aulas ao vivo + um bônus incrível que preparei para você, entre no nosso grupo do whatsapp clicando no ícone abaixo:</p>
+                <p>E para <b>FINALIZAR</b> sua inscrição você vai precisar entrar no grupo do WhatsApp clicando no ícone abaixo.</p>
+                <br/>
+                <p>É por lá que vai receber todas as informações sobre o evento incluindo o link das aulas ao vivo e também um bônus muito especial que preparei para você.</p>
+
 
             </div>
 
             <div className='whatsappButton' >
 
-                <img src={wppIcon} />
+                <a href='https://chat.whatsapp.com/EsAtg17ZZ4JEOrvxmpdV4X-- ' target="_blank" > <img src={wppIcon} /> </a>
 
             </div>
+
+            <span>Fique tranquila(o), nesse grupo somente os administradores irão falar e você não vai receber notificação a todo momento.</span>
 
         </section>
 
@@ -211,7 +218,7 @@ function Home() {
             <h2>Quem é @laizaagomes?</h2>
 
             <div className='textAboutMe' >
-                
+
                 <p>Meu nome é Laiza, tenho 23 anos, sou estudante de Nutrição e empreendedora digital.<br/><br/>
 
                 Sempre curti muito a arte e tudo que envolve processos criativos.<br/><br/>
@@ -230,12 +237,14 @@ function Home() {
 
             </div>
 
-
                 <figure>
 
                     <img src={sobreMim} />
 
-                    <figcaption><a href='https://www.instagram.com/laizaagomes/' >@laizaagomes</a></figcaption>
+                    <figcaption>
+                        <img src={instaIcon} />
+                        <a href='https://www.instagram.com/laizaagomes/' target="_blank" >@laizaagomes</a>
+                    </figcaption>
 
                 </figure>
 

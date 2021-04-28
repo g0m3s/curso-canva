@@ -113,8 +113,9 @@ html {
 
 .imgIntro img {
 
-    width: 100vw;
+    max-width: 100vw;
     max-height: 500px;
+    border-radius: 30px;
 
 }
 
@@ -292,7 +293,7 @@ html {
 .daysCourse li {
 
     margin: 3px 0px;
-    font-size: 10pt;
+    font-size: 12pt;
 
 }
 
@@ -316,7 +317,7 @@ html {
 
 }
 
-.formOptions fieldset a { 
+.formOptions fieldset a {
 
     width: auto;
     color: #707D65;
@@ -331,10 +332,18 @@ html {
 
 }
 
+.formOptions p {
+
+    text-align: justify;
+    font-size: 11pt;
+    text-indent: 15pt;
+
+}
+
 .formOptions input {
 
     width: 60%;
-    color: black;
+    color: #707D65;
     border: none;
     border-radius: 30px;
     box-shadow: 0px 0px 8px rgba(160, 160, 160, 0.35);
@@ -348,6 +357,15 @@ html {
 
     width: 120px;
     height: 120px;
+
+}
+
+.divForm span {
+
+    width: 80%;
+    color: #D1DCE2;
+    text-align: center;
+    font-size: 9pt;
 
 }
 
@@ -398,9 +416,12 @@ html {
 .aboutMe figcaption{
 
     width: 45%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     position: absolute;
-    top: 50%;
-    left: 48%;
+    top: 45%;
+    left: 45%;
     right: 0;
     font-size: 15pt;
 
@@ -411,11 +432,20 @@ html {
     width: 80%;
 
 }
+
 .aboutMe figcaption a {
 
     cursor: pointer;
     text-decoration: none;
     color: #D1DCE2;
+
+}
+
+.aboutMe figcaption img {
+
+    width: 50px;
+    border-radius: 50%;
+    margin-right: 5px;
 
 }
 
@@ -440,6 +470,13 @@ html {
 
         margin: 30px 7%;
 
+    }
+
+    .imgIntro img {
+
+        width: 100vw;
+        border-radius: 0px;
+    
     }
 
     .daysCourse {
