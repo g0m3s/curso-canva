@@ -51,6 +51,12 @@ html {
 
 }
 
+.intro img {
+
+    /* width: 30%; */
+    height: 130%;
+}
+
 .intro span {
 
     font-family: 'Shadows Into Light', cursive;
@@ -148,6 +154,12 @@ html {
 
 }
 
+.pinkBackgroud {
+
+    background-color: #C8A096;
+
+}
+
 .blueBackgroud {
 
     background-color: #D1DCE2;
@@ -178,26 +190,155 @@ html {
 
 }
 
-.phraseTwo {
+.infoAulas {
+
+    width: 100vw;
+}
+
+.infoAulas figure {
+
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #C8A096;
+    
+}
+
+.infoAulas figcaption {
+
+    width: 80%;
+    top: 25%;
+    position: absolute;
+    color: #707D65;
+    font-size: 20pt;
+
+}
+
+.infoAulas img {
+
+    width: 100%;
+    
+}
+
+.subtitleInfoAulas {
+
+    width: 80%;
+    text-align: justify;
+    background-color: #C8A096;
+
+}
+
+.boxWhatYouWillLearn {
+
+    width: 80%;
+    margin-top: 30px;
+    padding: 35px;
+    color: #D1DCE2;
+    border-radius: 10px;
+    background-color: #707D65;
+
+}
+
+.boxWhatYouWillLearn p {
+
+    margin: 0;
+    padding: 0;
+
+}
+
+.divGuests h4 {
+
+    width: 80%;
+    color: #D1DCE2;
+    text-align: justify;
+    font-size: 25pt;
+
+}
+
+.guests{
+
+    width: 100vw;
+    margin: 25px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+}
+
+.guests img {
+
+    width: 350px;
+    height: 350px;
+    border-radius: 50%;
+
+}
+
+.guests p { 
+
+    width: 80%;
+    color: #707D65;
+    text-align: center;
+    font-size: 11pt;
+    margin: 10px 0px;
+
+}
+
+.guests a { 
+
+    text-decoration: none;
+    width: 80%;
+    color: #707D65;
+    text-align: center;
+    font-size: 11pt;
+    margin: 10px 0px;
+
+}
+
+.guests h6 { 
 
     color: #707D65;
-    line-height: 28px;
+    width: 80%;
+    text-align: center;
+    text-indent: 2em;
+    font-size: 11pt;
+    margin: 10px 0px;
 
 }
 
-.phraseTwo span { 
-    
-    padding: 3px;
-    background-color: #707D65;
-    border-radius: 10px;
-    color: white;
+.guarantees {
+
+    color: #707D65;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
 
 }
 
-.phraseThree {
+.guaranteesItems  {
 
-    background-color: #707D65;
-    color: white;
+    width: 80%;
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+
+}
+
+.guaranteesItems img{
+
+    width: 120px;
+
+}
+
+.guaranteesItems legend p{
+
+    text-align: justify;
+    font-size: 10pt;
+    color: #D1DCE2;
+    margin: 5px 0px 5px 10px;
 
 }
 
@@ -221,22 +362,6 @@ html {
 
 }
 
-.dayCourseCircle {
-
-    width:  55px;
-    height: 55px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    color: white;
-    padding: 35px;
-    border-radius: 50%;
-    background-color: #C8A096;
-    text-align: center;
-    
-}
-
 @keyframes upAndDown {
 
     0% {
@@ -257,86 +382,46 @@ html {
     
 }
 
-.daysCourse {
+.formOptions {
 
-    width: 50%;
-    margin: 30px 0px;
+    width: 80%;
     display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
     flex-direction: column;
-
-}
-
-.daysCourse h3 {
-
-    margin-top: 20px;
+    color: #D1DCE2;
     text-align: center;
 
 }
 
-.daysCourse h5 {
+.formOptions h2{
 
-    font-size: 9pt;
     margin-top: 10px;
+    font-size: 20pt;
+
+}
+
+.formOptions p{
+
+    color: #707D65;
+    margin-top: 10px;
+    font-size: 18pt;
+    background-color: #D1DCE2;
+    border-radius: 30px;
+    padding: 5px;
+
+}
+
+.formOptions h3{
+
     text-align: center;
-
-}
-
-.daysCourse ul {
-
-    margin: 15px 0px;
-
-}
-
-.daysCourse li {
-
-    margin: 3px 0px;
+    margin-top: 10px;
     font-size: 12pt;
 
 }
 
-.formOptions {
+.formOptions h4{
 
-    width: 60%;
-    display: flex;
-    flex-direction: column;
-    color: #D1DCE2;
-
-}
-
-.formOptions fieldset {
-
-    border: none;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    text-align: center;
-
-}
-
-.formOptions fieldset a {
-
-    width: auto;
-    color: #707D65;
-    padding: 15px;
-    margin-top: 15px;
-    margin-bottom: 20px;
-    cursor: pointer;
-    background-color: #D1DCE2;
-    text-decoration: none;
-    border-radius: 30px;
-    box-shadow: 0px 0px 8px rgba(160, 160, 160, 0.35);
-
-}
-
-.formOptions p {
-
-    text-align: justify;
-    font-size: 11pt;
-    text-indent: 15pt;
+    text-decoration: line-through;
+    margin-top: 20px;
 
 }
 
@@ -466,12 +551,6 @@ html {
 @media screen and (max-width: 768px) {
 
 
-    .DefaultDiv p {
-
-        margin: 30px 7%;
-
-    }
-
     .imgIntro img {
 
         width: 100vw;
@@ -479,16 +558,47 @@ html {
     
     }
 
-    .daysCourse {
+    .infoAulas figcaption {
 
-        width: 70%;
+        font-size: 10pt;
 
+    }
+
+    .boxWhatYouWillLearn {
+
+        padding: 15px;
+
+    }
+
+    .divGuests h4 {
+
+        font-size: 12pt;
+    
+    }
+
+    .guests img {
+
+        width: 250px;
+        height: 250px;
+
+    }
+
+    .guests h6 { 
+
+        text-align: justify;
+    
     }
 
     .formOptions{
 
         width: 80%;
 
+    }
+
+    .formOptions h3{
+
+        text-align: justify;
+    
     }
 
     .formOptions fieldset {

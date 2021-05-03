@@ -12,6 +12,18 @@ import instaIcon from '../../imgs/instaIcon.png';
 import depoimentos from '../../imgs/depoimentos.png';
 import sobreMim from '../../imgs/sobreMim.png';
 
+
+import canvaCriativo from '../../imgs/canvaCriativo.png';
+import infoAulas from '../../imgs/infoAulas.png';
+import guto from '../../imgs/guto.jpg';
+import amandaAdv from '../../imgs/amandaAdv.jpg';
+import amandaMed from '../../imgs/amandaMed.jpg';
+import ligia from '../../imgs/ligia.jpg';
+import thacia from '../../imgs/thacia.jpg';
+import garantia from '../../imgs/garantia.png';
+import certificado from '../../imgs/certificado.png';
+import acessoVitalicio from '../../imgs/acessoVitalicio.png';
+
 function Home() {
 
     const [formData, setFormData] = useState({
@@ -61,7 +73,8 @@ function Home() {
     <div className="App">
 
         <div className='intro' >
-            <h1>Semana do<br/> <span>Canva</span> Criativo</h1>
+            {/* <h1>Semana do<br/> <span>Canva</span> Criativo</h1> */}
+            <img src={canvaCriativo} />
         </div>
 
         <div className='imgIntro'>
@@ -82,29 +95,33 @@ function Home() {
 
             <div className='DefaultDiv phraseOne'>
 
-                <p>Hello criativa(o), muito massa ter você por aqui! Deixa eu te perguntar, você quer muito divulgar seu trabalho e/ou seus estudos no Instagram mas sente que não consegue ser criativa(o) na hora de fazer os posts?</p>
+                <a className='buttonIWant' href='https://pay.hotmart.com/P52361325E?checkoutMode=0&bid=1620074562844' target='_blank' >QUERO ADQUIRIR O CURSO</a>
 
             </div>
 
         </div>
 
-        <section className='DefaultSection greenBackgroud'>
+        <section className='DefaultSection pinkBackgroud'>
 
-            <div className='DefaultDiv phraseTwo whiteBackgroud'>
+            <div className='infoAulas' >
 
-                <p>Se a resposta for sim, quero te fazer um <span>convite especial!</span> Dos dias 01 a 03 de maio vai rolar a <span>Semana do Canva Criativo,</span> 100% gratuita e 100% online.</p>
+                <figure>
+
+                    <div className='subtitleInfoAulas' >
+
+                        <figcaption>
+                        O curso Canva Criativo é pra quem quer construir uma marca forte no meio digital, mas se sente perdida(o) e sem criatividade na hora de criar conteúdo.
+                        </figcaption>
+
+                    </div>
+
+                    <img src={infoAulas} alt='foto de introdução' />
+
+                </figure>
 
             </div>
 
-            <div className='DefaultDiv phraseThree'>
-
-                <a className='buttonIWant' href='#formOptions' >JÁ QUERO PARTICIPAR</a>
-
-                <p>Serão 3 dias de aulas ao vivo em que eu vou te mostrar, na prática, formas de criar conteúdos no canva que tenham a sua personalidade estampada pra você fugir do monótono e do igualzão que todo mundo replica por aí.</p>
-
-            </div>
-
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#D1DCE2" fill-opacity="1" d="M0,96L48,85.3C96,75,192,53,288,90.7C384,128,480,224,576,266.7C672,309,768,299,864,266.7C960,235,1056,181,1152,149.3C1248,117,1344,107,1392,101.3L1440,96L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#D1DCE2" fill-opacity="1" d="M0,96L48,85.3C96,75,192,53,288,90.7C384,128,480,224,576,266.7C672,309,768,299,864,266.7C960,235,1056,181,1152,149.3C1248,117,1344,107,1392,101.3L1440,96L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z" ></path></svg>
 
         </section>
 
@@ -114,96 +131,161 @@ function Home() {
 
                 <h2>O que você vai aprender?</h2>
 
-                <div className='daysCourse' >
+                <div className='boxWhatYouWillLearn' >
 
-                    <div className='dayCourseCircle' >
-                        <h2>Dia</h2>
-                        <h2>1</h2>
-                    </div>
-
-                    <h3>O Canva e a minha marca pessoal</h3>
-
-                    <ul>
-                        <li>O canva simplificado</li>
-                        <li>Por que é importante ter uma marca pessoal?</li>
-                        <li>Definindo a paleta de cores da sua marca pessoal</li>
-                    </ul>
+                    <p> A construir sua marca pessoal e também todas as funções do canva desde o início até os efeitos mais diferentões.</p>
 
                 </div>
 
-                <div className='daysCourse' >
+                <div className='boxWhatYouWillLearn' >
 
-                    <div className='dayCourseCircle' >
-                        <h2>Dia</h2>
-                        <h2>2</h2>
-                    </div>
-
-                    <h3>Canva para estudantes criativos</h3>
-
-                    <ul>
-                        <li>Como conciliar estudos e criação de conteúdo</li>
-                        <li>Como criar posts mais rápidos </li>
-                    </ul>
+                    <p>  A criar a sua identidade visual do 0, incluindo paleta de cores, logos, fontes, elementos que se encaixam no seu perfil.</p>
 
                 </div>
 
-                <div className='daysCourse' >
+                <div className='boxWhatYouWillLearn' >
 
-                    <div className='dayCourseCircle' >
-                        <h2>Dia</h2>
-                        <h2>3</h2>
-                    </div>
-
-                    <h3>Canva para empreendedores criativos</h3>
-
-                    <h5>DIA COM PROGRAMAÇÃO MUITO ESPECIAL!</h5>
-                    <ul>
-                        <li>Parte 1: "Meu instagram virou minha empresa, e agora?" - Aula com a participação da advogada empresarial Amanda Pires </li>
-                        <li>Parte 2: Montando o site do meu negócio pelo canva  </li>
-                        <li>Parte 3: Surpresa e bônus!</li>
-                    </ul>
+                    <p> A treinar a criatividade e descobrir qual estilo de design mais se encaixa com o seu perfil.</p>
 
                 </div>
+
+                <div className='boxWhatYouWillLearn' >
+
+                    <p> A usar o canva para ajudar no crescimento do seu negócio digital ou físico (lojinhas, serviço personalizado e profissionais especializados.</p>
+
+                </div>
+
+                <div className='boxWhatYouWillLearn' >
+
+                    <p> A usar o canva para divulgar seu trabalho desde a faculdade, enquanto estudante.</p>
+
+                </div>
+
+                <div className='boxWhatYouWillLearn' >
+
+                    <p> A usar o canva para transformar o seu perfil no Instagram em um perfil criativo e de sucesso.</p>
+
+                </div>
+
 
             </div>
 
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#707D65" fill-opacity="1" d="M0,96L48,85.3C96,75,192,53,288,90.7C384,128,480,224,576,266.7C672,309,768,299,864,266.7C960,235,1056,181,1152,149.3C1248,117,1344,107,1392,101.3L1440,96L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#C8A096" fill-opacity="1" d="M0,160L60,149.3C120,139,240,117,360,133.3C480,149,600,203,720,224C840,245,960,235,1080,208C1200,181,1320,139,1380,117.3L1440,96L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z" data-darkreader-inline-fill=""></path></svg>
 
+        </section>
+
+        <section className='DefaultSection pinkBackgroud divGuests'>
+
+            <h4>São mais de 60 aulas organizadas em 10 módulos, sendo o último módulo formado por 5 masterclasses ministradas por 5 convidados incríveis:</h4>
+
+            <div className='guests' >
+
+                <img src={guto} />
+                <a href="https://instagram.com/bastosguto" target='_blank'><b>@bastosguto</b></a>
+                <p><b>Pensando no marketing do meu Instagram</b></p>
+                <h6>Guto Bastos, trabalha com marketing e gestão de tráfego pago (os famosos anúncios online) para perfis do Instagram.</h6>
+
+            </div>
+
+            <div className='guests' >
+
+                <img src={amandaAdv} />
+                <a href="https://instagram.com/adv.amandapires" target='_blank'><b>@adv.amandapires</b></a>
+                <p><b>"Meu Instagram virou minha empresa, e agora?"</b></p>
+                <h6>Amanda Pires, advogada especialista em direito empresarial e civial.</h6>
+
+            </div>
+
+            <div className='guests' >
+
+                <img src={amandaMed} />
+                <a href="https://instagram.com/amandapecchio" target='_blank'><b>@amandapecchio</b></a>
+                <p><b>Como conciliar rotina de estudos com criação de conteúdo</b></p>
+                <h6>Amanda Pecchio, estudante de medicina e empreendedora digital. Fala sobre planejamento e organização.</h6>
+
+            </div>
+
+            <div className='guests' >
+
+                <img src={ligia} />
+                <a href="https://instagram.com/ligialinsmais" target='_blank'><b>@ligialinsmais</b></a>
+                <p><b>Ética profissional no meio digital</b></p>
+                <h6>Lígia Lins, nutricionista e designer de marcas.</h6>
+
+            </div>
+
+            <div className='guests' >
+
+                <img src={thacia} />
+                <a href="https://instagram.com/thaciacoutinho" target='_blank'><b>@thaciacoutinho</b></a>
+                <p><b>Criatividade no meio acadêmico</b></p>
+                <h6>Thácia Coutinho, estudante de nutrição e diretora de comunicação da @ladocufrj.</h6>
+
+            </div>
+
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#707D65" fill-opacity="1" d="M0,128L60,154.7C120,181,240,235,360,224C480,213,600,139,720,101.3C840,64,960,64,1080,74.7C1200,85,1320,107,1380,117.3L1440,128L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z" data-darkreader-inline-fill="" ></path></svg>
+            
         </section>
 
         <section className='DefaultSection greenBackgroud divForm'>
 
-            <div className='formOptions' id='formOptions' >
+            <div className='formOptions' >
 
-                <fieldset>
+                <h2>Gostou?</h2>
+
+                <h3>Então não perde tempo não, adquira todo esse material pelo valor promocional:</h3>
+
+                <h4>de R$197,00</h4>
+
+                <p><b>por 3 x de R$33,96</b></p>
+
+                <h3>à vista R$97,00</h3>
+
+                <div className='DefaultDiv' style={{marginTop:'50px', marginBottom:'50px'}}>
+
+                    <a className='buttonIWant' href='https://pay.hotmart.com/P52361325E?checkoutMode=0&bid=1620074562844' target='_blank' >QUERO ADQUIRIR O CURSO</a>
+
+                </div>
+
+
+            </div>
+
+            <div className='guarantees' >
+
+                <div className='guaranteesItems' >
+
+                    <img src={garantia} /> 
 
                     <legend>
-                        <h2>Gostou?</h2>
-                        <h3>Então não perde tempo não, inscreva-se bem aqui:</h3>
+                        <p><b>Garantia de 7 dias!</b></p>
+                        <p>Caso você não se identifique com o curso por algum motivo, no prazo de 7 dias devolvo seu investimento.</p>
                     </legend>
 
-                    <input name='name' onChange={handleInputChange} placeholder='Nome' />
+                </div>
 
-                    <input name='email' onChange={handleInputChange} placeholder='E-mail' />
+                <div className='guaranteesItems' >
 
-                    <a onClick={()=>{sendLeadInfo()}} >Enviar</a>
+                    <img src={certificado} /> 
 
-                </fieldset>
+                    <legend>
+                        <p><b>Certificado de conclusão!</b></p>
+                        <p>Ao final do curso, você receberá um certificado de conclusão.</p>
+                    </legend>
 
-                <p>E para <b>FINALIZAR</b> sua inscrição você vai precisar entrar no grupo do WhatsApp clicando no ícone abaixo.</p>
-                <br/>
-                <p>É por lá que vai receber todas as informações sobre o evento incluindo o link das aulas ao vivo e também um bônus muito especial que preparei para você.</p>
+                </div>
 
+                <div className='guaranteesItems' >
+
+                    <img src={acessoVitalicio} /> 
+
+                    <legend>
+                        <p><b>Acesso vitalício!</b></p>
+                        <p>Ao adquirir o curso você terá acesso vitálicio ao material e vai poder acessar a hora que quiser.</p>
+                    </legend>
+
+                </div> 
 
             </div>
-
-            <div className='whatsappButton' >
-
-                <a href='https://chat.whatsapp.com/FECexm2WVcB681hxXk0UFK' target="_blank" > <img src={wppIcon} /> </a>
-
-            </div>
-
-            <span>Fique tranquila(o), nesse grupo somente os administradores irão falar e você não vai receber notificação a todo momento.</span>
 
         </section>
 
